@@ -12,10 +12,14 @@ format:
       light: minty
       dark: superhero
     frontszie: 32x
-
+execute: 
+  echo: fenced
+  message: true
+  error: true
 lang: pl
 bibliography: references.bib
 citation-location: margin
+
 
 
 ---
@@ -73,6 +77,27 @@ I collapse (Actually you can't see the callout collapsing, just copy & paste in 
 :::
 
 ## Running code
+
+```{r}
+#| echo: true
+#| eval: false
+head(rock)
+```
+
+```{r}
+data = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
+
+#chunk 1
+head(data)
+
+#chunk 1
+str(data)
+
+#chunk 3 
+summary(data)
+
+```
+
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 

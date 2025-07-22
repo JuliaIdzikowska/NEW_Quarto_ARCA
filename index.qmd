@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "My first quarto document"
 author: "Julia Idzikowska"
 data: today 
 format:
@@ -12,21 +12,67 @@ format:
       light: minty
       dark: superhero
     frontszie: 32x
+
 lang: pl
 bibliography: references.bib
+citation-location: margin
 
 
 ---
-# Articles
+# Backgroud
 
-This is some nice article about EEG @teplan2002fundamentals
+This is a very nice article about EEG @teplan2002fundamentals
+
+::: {.grid}
+
+::: {.g-col-4}
+
+In the first column I will write some text. On the right you can see paired image.
+
+:::
+
+::: {.g-col-8}
+
+I want this picture displayed in the margin 
+
+
+![](img/b4.png)
+
+:::
+:::
 
 
 # Profile
 
 Here you can see my profile [HTML](myfile.html) document created quarto 
 
-## Running Code
+## Here you can find a nice panel tabset
+
+::: {.panel-tabset}
+
+## Aim
+
+Here I present the aim of the study 
+
+## Methods
+
+Here I present the methods used to pursue the aim
+
+## Results
+
+And here I present the results
+
+:::
+
+::: {.callout-warning collapse="true"}
+
+## Look at me!!
+
+I collapse (Actually you can't see the callout collapsing, just copy & paste in your file)
+
+:::
+
+## Running code
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
@@ -46,6 +92,7 @@ The `echo: false` option disables the printing of code (only output is displayed
 ### Picture
 
 ![This is an image](img/b4.png)
+
 
 
 ## Quarto

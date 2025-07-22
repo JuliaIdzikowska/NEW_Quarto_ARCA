@@ -12,10 +12,15 @@ format:
       light: minty
       dark: superhero
     frontszie: 32x
-lang: eng
+lang: pl
 bibliography: references.bib
 
+
 ---
+# Articles
+
+This is some nice article about EEG @teplan2002fundamentals
+
 
 # Profile
 
@@ -40,19 +45,13 @@ The `echo: false` option disables the printing of code (only output is displayed
 
 ### Picture
 
-![This is an image](/Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img)
-![This is an image](/Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img)
+![This is an image](img/b4.png)
+
 
 ## Quarto
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
 
-@Book{ggplot,
-    author = {Hadley Wickham},
-    title = {ggplot2: Elegant Graphics for Data Analysis},
-    publisher = {Springer-Verlag New York},
-    year = {2016},
-    isbn = {978-3-319-24277-4},
-    url = {https://ggplot2.tidyverse.org}
+
 

@@ -33,7 +33,7 @@ In the first column I will write some text. On the right you can see paired imag
 
 ::: {.g-col-8}
 
-I want this picture displayed in the margin 
+I want this picture to be a visual representation of the text in the left column.
 
 
 ![](img/b4.png)

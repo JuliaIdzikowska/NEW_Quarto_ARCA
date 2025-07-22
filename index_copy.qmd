@@ -12,14 +12,17 @@ format:
       light: minty
       dark: superhero
     frontszie: 32x
-lang: eng
-bibliography: references.bib
+    lang: it
 
 ---
 
-# Profile
+# Section 1
 
-Here you can see my profile [HTML](myfile.html) document created quarto 
+Here you can see my first [HTML](myfile.html) document created quarto 
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
 ## Running Code
 
@@ -41,18 +44,3 @@ The `echo: false` option disables the printing of code (only output is displayed
 ### Picture
 
 ![This is an image](/Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img)
-![This is an image](/Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img)
-
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-
-@Book{ggplot,
-    author = {Hadley Wickham},
-    title = {ggplot2: Elegant Graphics for Data Analysis},
-    publisher = {Springer-Verlag New York},
-    year = {2016},
-    isbn = {978-3-319-24277-4},
-    url = {https://ggplot2.tidyverse.org}
-

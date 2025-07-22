@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="it" xml:lang="it"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="eng" xml:lang="eng"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.42">
@@ -3090,13 +3090,13 @@ vertical-align: -.125em;
     <h2 id="toc-title">My content</h2>
    
   <ul>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link active" data-scroll-target="#section-1">Section 1</a>
+  <li><a href="#profile" id="toc-profile" class="nav-link active" data-scroll-target="#profile">Profile</a>
   <ul class="collapse">
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
   <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code">Running Code</a>
   <ul class="collapse">
   <li><a href="#picture" id="toc-picture" class="nav-link" data-scroll-target="#picture">Picture</a></li>
   </ul></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -3115,7 +3115,7 @@ vertical-align: -.125em;
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Autore/Autrice</div>
+    <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
              <p>Julia Idzikowska </p>
           </div>
@@ -3130,18 +3130,14 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="section-1" class="level1">
-<h1>Section 1</h1>
-<p>Here you can see my first <a href="myfile.html">HTML</a> document created quarto</p>
-<section id="quarto" class="level2">
-<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
-</section>
+<section id="profile" class="level1">
+<h1>Profile</h1>
+<p>Here you can see my profile <a href="myfile.html">HTML</a> document created quarto</p>
 <section id="running-code" class="level2">
 <h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
@@ -3155,13 +3151,14 @@ vertical-align: -.125em;
 <p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
 <section id="picture" class="level3">
 <h3 class="anchored" data-anchor-id="picture">Picture</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img role="img" src="./Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img.png" class="img-fluid figure-img"></p>
-<figcaption>This is an image</figcaption>
-</figure>
-</div>
+<p><img role="img" aria-label="This is an image" src="./Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img.png" class="img-fluid" alt="This is an image"> <img role="img" aria-label="This is an image" src="./Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img.png" class="img-fluid" alt="This is an image"></p>
 </section>
+</section>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+<p>bibliography: references.bib</p>
+<p><span class="citation" data-cites="Book">@Book</span>{ggplot, author = {Hadley Wickham}, title = {ggplot2: Elegant Graphics for Data Analysis}, publisher = {Springer-Verlag New York}, year = {2016}, isbn = {978-3-319-24277-4}, url = {https://ggplot2.tidyverse.org}</p>
 </section>
 </section>
 
@@ -3354,12 +3351,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiato!");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiato!");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

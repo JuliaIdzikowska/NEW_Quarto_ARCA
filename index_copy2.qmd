@@ -77,30 +77,25 @@ I collapse (Actually you can't see the callout collapsing, just copy & paste in 
 :::
 
 ## Running code
-```{r}
-data = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
-```
 
 ```{r}
 #| echo: true
-#chunk 1 show the code
+#| eval: false
+head(rock)
+```
+
+```{r}
+data = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
+
+#chunk 1
 head(data)
 
-```
-
-
-```{r}
-#| echo: false
-#chunk 1 show only the results
-"Here you can see the structure of the data"
+#chunk 1
 str(data)
-```
 
-
-```{r}
-#| echo: fenced
-#chunk 3 show the entire code!
+#chunk 3 
 summary(data)
+
 ```
 
 

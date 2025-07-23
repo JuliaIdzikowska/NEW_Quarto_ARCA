@@ -20,6 +20,7 @@ execute:
 code-fold: true
 code-summary: See this specific code
 warning: false 
+code-annotation: select
 ---
 
 # Plots
@@ -29,6 +30,7 @@ Below you will find a plot.
 ```{r}
 #| echo: false
 dataset = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
+data = mcars
 ```
 
 
@@ -136,6 +138,28 @@ kable(head(cars))
 
 kable(head(pressure))
 ```
+
+# Annotations 
+
+```{r}
+#| echo: true
+# Line 
+mtcars %>%                               # <1>
+  ggplot( aes(mpg, hp, size = gear)) +   # <2>
+  geom_point() +                         # <3>    
+  geom_smooth(method = "lm")             # <4>
+
+```
+
+1. This does that 
+2. This is that 
+3. This is something new
+4. Pay attention to that
+
+Now I write some text and this code to find the minimum value of something `r mean(mtcars$gear)`
+
+The sample is composed by `r nrow(data)` subjects with this many variable `r ncol(data)`
+
 
 
 ![This is an image]()

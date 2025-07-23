@@ -78,28 +78,29 @@ I collapse (Actually you can't see the callout collapsing, just copy & paste in 
 
 ## Running code
 ```{r}
+#| echo: false
 data = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
 ```
 
 ```{r}
 #| echo: true
-#chunk 1 show the code
+#chunk 1 - Now you can see the code
 head(data)
 
 ```
 
 
+Here you can see the structure of the data
 ```{r}
 #| echo: false
 #chunk 1 show only the results
-"Here you can see the structure of the data"
 str(data)
 ```
 
 
 ```{r}
 #| echo: fenced
-#chunk 3 show the entire code!
+#chunk 3 - Now you have opportunity to see the entire code!
 summary(data)
 ```
 

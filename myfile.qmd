@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "This is the other document"
 author: "Julia Idzikowska"
 data: today 
 format:
@@ -12,25 +12,50 @@ format:
       light: minty
       dark: superhero
     frontszie: 32x
-    lang: it
-
+    lang: pl
+execute: 
+  echo: fenced
+  message: true
+  error: true
+code-fold: true
+code-summary: See this specific code
 ---
 
-# Section 1
+# Plots
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+Below you will find a plot.
 
 ```{r}
-1 + 1
+#| echo: false
+dataset = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
 ```
 
-You can add options to executable code like this 
+
+```{r}
+#| echo: true 
+#| out-width: 75%
+#| fig-align: center
+#| fig-cap: A graph from `mtcars`
+#| fig-cap-location: margin
+#| label: fig-mtcars
+
+library(ggplot2)
+ggplot(dataset, 
+       aes(x = flexibility, y = anxiety, color = mindfulness)) +
+  geom_point()
+
+```
+
+@fig-mtcars illustrates a plot
+
+```{r}
+#| label: tbl-mtcars
+
+library(DT)
+datatable(mtcars)
+```
+
+@tbl-mtcars is a table.
 
 ```{r}
 #| echo: false
@@ -39,6 +64,4 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
-### Picture
-
-![This is an image](/Users/julia/Desktop/QUARTO/NEW_Quarto_ARCA/img)
+![This is an image]()

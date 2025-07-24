@@ -1,14 +1,119 @@
 ---
 title: "First Quarto Presentation"
 author: "Julia Idzikowska"
-format: revealjs
+e-mail: "jidzikowska@st.swps.edu.pl"
+format: 
+  revealjs: 
+    self-contained: true
+    scrollable: true           
+    incremental: true
+    footer: "Presentation" 
+    logo: "img/k4.png"
+    slide-number:  c/t
+    show-slide-number: all
+    theme: [serif, myscss.scss]
 ---
 
 # Intro
+Welcome to a Quarto sample presentation, my go-to template for all future decks. Inside, you’ll find a solid structure, styling tips, and placeholder examples to get started in no time. 
 
-## Quarto
+## Quarto 
 
 Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+::: {.fragment .fade-up}
+Thanks Quarto!
+:::
+
+# Important stuff
+
+## Absolute positions
+
+
+![](img/b1.png){.absolute top=200 left=0 width="350" height="300"}
+
+![](img/k4.png){.absolute top=5 right=25 width="450" height="250"}
+
+![](img/b5.png){.absolute bottom=0 right=100 width="500" height="400"}
+
+
+## Stack content
+
+:::{.r-stack}
+
+![](img/b2.png){.fragment width="350" height="300"}
+
+![Watch out](img/k2.png){.fragment width="450" height="250"}
+
+![](img/b4){.fragment width="500" height="400"}
+
+:::
+
+## 
+::: {.fragment .highlight-red}
+This text will turn red
+:::
+
+::: {.fragment .fade-up}
+![](img/image_gepard.png){width="500" height="400"}
+:::
+
+::: {.fragment .fade-up}
+WOW!
+:::
+
+## Tabset
+
+::: {.panel-tabset}
+
+## Aim
+
+Here I present the aim of the study 
+
+## Methods
+
+Here I present the methods used to pursue the aim
+
+## Results
+
+And here I present the results
+
+:::
+
+
+## Slide x
+
+```{r}
+#| eval: false
+#| echo: true
+#| fig-align: center
+#| code-line-numbers: "|1-2|3|4-6|"
+
+
+dataset = read_csv("data/dataset.csv")
+data = mcars
+library(ggplot2)
+mtcars %>%                               
+  ggplot( aes(mpg, hp)) +   
+  geom_point() 
+```
+
+## Slide y {auto-animate="true"}
+
+```{r}
+#| echo: true
+
+
+dataset = read_csv("data/dataset.csv")
+data = mcars
+library(ggplot2)
+mtcars %>%                               
+  ggplot( aes(mpg, hp, color = gear)) +   
+  geom_point() + 
+  geom_smooth(method = "lm")
+```
+
+## Slide z
 
 ## Bullets
 
@@ -16,6 +121,12 @@ When you click the **Render** button a document will be generated that includes:
 
 -   Content authored with markdown
 -   Output from executable code
+
+::: {.notes}
+
+In this the place where I can put my didaskalia for the presentation
+
+:::
 
 ## Code
 

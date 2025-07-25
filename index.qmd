@@ -90,7 +90,6 @@ I collapse (Actually you can't see the callout collapsing, just copy & paste in 
 ```{r}
 #| echo: false
 data = read.csv("~/Desktop/QUARTO/NEW_Quarto_ARCA/data/dataset.csv")
-quarto install tinytex --update-path 
 ```
 
 ```{r}

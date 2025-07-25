@@ -27,6 +27,9 @@ citation-location: margin
 # Presentation
 [Here](FirstQuartoPresentation.html) you can find a presentation. 
 
+I aslo have a [PDF](PDFpresentation.html) presentation. 
+
+
 # Backgroud
 
 This is a very nice article about EEG @teplan2002fundamentals

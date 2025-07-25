@@ -1,6 +1,17 @@
 ---
-title: "LaTex Presentation"
-format: beamer
+title: "PDF presentation"
+author: "Julia Idzikowska"
+e-mail: "jidzikowska@st.swps.edu.pl"
+format: 
+  revealjs: 
+    self-contained: true
+    scrollable: true           
+    incremental: true
+    footer: "Presentation" 
+    logo: "img/k4.png"
+    slide-number:  c/t
+    show-slide-number: all
+    theme: night
 ---
 
 ## Quarto

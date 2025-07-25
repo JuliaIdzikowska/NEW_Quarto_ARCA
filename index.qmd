@@ -25,9 +25,13 @@ citation-location: margin
 ---
 
 # Presentation
-[Here](FirstQuartoPresentation.html) you can find a presentation. 
+
+Here you can see the other document [HTML](myfile.html) document created quarto. 
+
+[Here](FirstQuartoPresentation.html) you can find a html presentation. 
 
 I aslo have a [PDF](PDFpresentation.html) presentation. 
+
 
 
 # Backgroud
@@ -53,9 +57,8 @@ I want this picture to be a visual representation of the text in the left column
 :::
 
 
-# Profile
 
-Here you can see the other document [HTML](myfile.html) document created quarto 
+
 
 ## Here you can find a nice panel tabset
 
